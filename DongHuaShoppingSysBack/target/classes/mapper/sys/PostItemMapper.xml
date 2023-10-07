@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhu.sys.mapper.PostItemMapper">
+    <select id="getItemIdByPostId" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        SELECT item_id FROM x_post_item WHERE post_id = #{postId}
+    </select>
+</mapper>
